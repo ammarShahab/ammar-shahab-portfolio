@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { ThemeToggle } from "./ThemeToggle/ThemeToggle";
 
 // Navigation links config — easy to extend
 const NAV_LINKS = [
@@ -82,7 +83,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-
+        <ThemeToggle />
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-3">
           <motion.button
