@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle/ThemeToggle";
+import Image from "next/image";
 
 // Navigation links config — easy to extend
 const NAV_LINKS = [
@@ -53,7 +54,14 @@ export default function Navbar() {
           href="/"
           className="text-xl font-extrabold tracking-tighter text-zinc-900 select-none"
         >
-          Ethereal<span className="text-violet-600">.</span>
+          {/* Ethereal<span className="text-violet-600">.</span> */}
+          <Image
+            src="/logo-light.png"
+            alt="Logo"
+            width={40}
+            height={40}
+            // fill
+          />
         </Link>
 
         {/* Desktop links */}
