@@ -2,6 +2,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../components/web/theme-provider";
 import BackgroundLayout from "@/components/web/BackgroundLayout";
+import ScrollToTop from "@/components/web/ScrollToTop";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -28,7 +29,10 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <BackgroundLayout>{children}</BackgroundLayout>
+          <BackgroundLayout>
+            {children}
+            <ScrollToTop />
+          </BackgroundLayout>
         </ThemeProvider>
       </body>
     </html>

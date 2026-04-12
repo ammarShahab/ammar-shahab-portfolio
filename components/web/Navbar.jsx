@@ -44,7 +44,7 @@ export default function Navbar() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-5xl
+        className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-7xl
           rounded-full px-6 py-3 flex items-center justify-between
           bg-white/60 backdrop-blur-2xl border border-white/40
           transition-shadow duration-300
@@ -103,7 +103,7 @@ export default function Navbar() {
               shadow-[0_4px_16px_rgba(99,14,212,0.3)] hover:shadow-[0_6px_20px_rgba(99,14,212,0.4)]
               transition-shadow duration-300"
           >
-            Hire Me
+            Download Resume
           </motion.button>
 
           {/* Hamburger — mobile only */}
@@ -174,7 +174,7 @@ export default function Navbar() {
             </ul>
             <div className="mt-3 pt-3 border-t border-zinc-100">
               <button className="w-full bg-linear-to-br from-violet-600 to-purple-700 text-white text-sm font-bold py-3 rounded-xl shadow-md">
-                Hire Me
+                Download Resume
               </button>
             </div>
           </motion.div>

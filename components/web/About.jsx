@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Link from "next/link";
 
 // ─── Animation Variants ────────────────────────────────────────────────────
 const fadeUp = {
@@ -750,30 +751,31 @@ export default function About() {
               animate={isInView ? "show" : "hidden"}
               className="flex flex-wrap gap-3 pt-2"
             >
-              <motion.a
-                href="#contact"
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 10px 30px rgba(99,14,212,0.30)",
-                }}
-                whileTap={{ scale: 0.96 }}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm
+              <Link href="#contact">
+                <motion.div
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0 10px 30px rgba(99,14,212,0.30)",
+                  }}
+                  whileTap={{ scale: 0.96 }}
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-bold text-sm
                   bg-gradient-to-br from-violet-600 to-purple-700 text-white
                   shadow-[0_4px_16px_rgba(99,14,212,0.22)] transition-shadow duration-300"
-              >
-                Let&apos;s Work Together
-                <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
-                  <path
-                    d="M3 8h10M9 4l4 4-4 4"
-                    stroke="currentColor"
-                    strokeWidth="1.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </motion.a>
+                >
+                  Let&apos;s Work Together
+                  <svg className="w-4 h-4" viewBox="0 0 16 16" fill="none">
+                    <path
+                      d="M3 8h10M9 4l4 4-4 4"
+                      stroke="currentColor"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </motion.div>
+              </Link>
 
-              <motion.a
+              {/* <motion.a
                 href="/resume.pdf"
                 target="_blank"
                 whileHover={{ scale: 1.05 }}
@@ -794,8 +796,8 @@ export default function About() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Download CV
-              </motion.a>
+                Download Resume
+              </motion.a> */}
             </motion.div>
           </motion.div>
         </div>

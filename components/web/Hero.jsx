@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 // ─── Animation Variants ────────────────────────────────────────────────────
@@ -188,34 +189,38 @@ export default function Hero() {
           {/* CTA Buttons */}
           <motion.div variants={fadeUp} className="flex flex-wrap gap-3">
             {/* Primary */}
-            <motion.button
-              whileHover={{
-                scale: 1.04,
-                boxShadow: "0 12px 32px rgba(99,14,212,0.35)",
-              }}
-              whileTap={{ scale: 0.96 }}
-              className="
+            <Link href="#contact">
+              <motion.button
+                whileHover={{
+                  scale: 1.04,
+                  boxShadow: "0 12px 32px rgba(99,14,212,0.35)",
+                }}
+                whileTap={{ scale: 0.96 }}
+                className="
                 bg-gradient-to-br from-violet-600 to-purple-700 text-white
                 px-7 py-3.5 rounded-full font-bold text-base
                 shadow-[0_6px_20px_rgba(99,14,212,0.22)] transition-shadow duration-300
               "
-            >
-              Get In Touch
-            </motion.button>
+              >
+                Get In Touch
+              </motion.button>
+            </Link>
 
             {/* Secondary */}
-            <motion.button
-              whileHover={{ scale: 1.04 }}
-              whileTap={{ scale: 0.96 }}
-              className="
+            <Link href="#projects">
+              <motion.button
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                className="
                 px-7 py-3.5 rounded-full font-bold text-base border transition-colors duration-200
                 bg-zinc-100 text-zinc-800 border-zinc-200
                 dark:bg-zinc-800 dark:text-zinc-100 dark:border-zinc-700
                 hover:bg-zinc-200 dark:hover:bg-zinc-700
               "
-            >
-              Browse Projects
-            </motion.button>
+              >
+                Browse Projects
+              </motion.button>
+            </Link>
           </motion.div>
 
           {/* Tech stack */}
