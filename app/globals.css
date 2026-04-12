@@ -128,3 +128,10 @@
     @apply font-sans;
   }
 }
+
+@layer base {
+  html {
+    scroll-behavior: smooth; /* ✅ this is the core fix */
+    overflow-x: hidden;
+  }
+}

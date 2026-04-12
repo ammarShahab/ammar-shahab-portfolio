@@ -8,10 +8,11 @@ import Image from "next/image";
 
 // Navigation links config — easy to extend
 const NAV_LINKS = [
-  { label: "Work", href: "#work" },
+  { label: "Home", href: "#" },
   { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Journal", href: "#journal" },
+  { label: "Skills", href: "#skills" },
+  { label: "Qualification", href: "#qualification" },
+  { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
 ];
 

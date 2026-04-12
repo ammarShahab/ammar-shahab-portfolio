@@ -1,4 +1,5 @@
 import About from "@/components/web/About";
+import Footer from "@/components/web/Footer";
 import GetInTouch from "@/components/web/GetInTouch";
 import Hero from "@/components/web/Hero";
 import Navbar from "@/components/web/Navbar";
@@ -18,6 +19,7 @@ export default function Home() {
           <Qualification />
           <Projects />
           <GetInTouch />
+          <Footer />
         </main>
       </div>
     </>

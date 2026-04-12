@@ -164,7 +164,7 @@ export default function GetInTouch() {
           className="flex items-center gap-3 mb-6"
         >
           <span className="h-px w-10 bg-violet-400 dark:bg-violet-600" />
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-violet-500 dark:text-violet-400">
+          <span className="text-xl font-bold uppercase tracking-[0.2em] text-violet-500 dark:text-violet-400">
             Contact
           </span>
         </motion.div>
