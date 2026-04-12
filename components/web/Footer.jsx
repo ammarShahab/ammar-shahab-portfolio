@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // ─── Social Links ──────────────────────────────────────────────────────────
 const SOCIALS = [
   {
     label: "GitHub",
-    href: "https://github.com/your-username",
+    href: "https://github.com/ammarShahab",
     hoverBg: "hover:bg-zinc-700",
     hoverRing: "hover:ring-zinc-500",
     hoverGlow: "hover:shadow-[0_8px_24px_rgba(113,113,122,0.5)]",
@@ -18,7 +19,7 @@ const SOCIALS = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/your-username",
+    href: "https://www.linkedin.com/in/md-ammar-shahab/",
     hoverBg: "hover:bg-blue-600",
     hoverRing: "hover:ring-blue-400",
     hoverGlow: "hover:shadow-[0_8px_24px_rgba(37,99,235,0.5)]",
@@ -30,7 +31,7 @@ const SOCIALS = [
   },
   {
     label: "Facebook",
-    href: "https://facebook.com/your-username",
+    href: "https://www.facebook.com/ammar.shahab.755217",
     hoverBg: "hover:bg-blue-500",
     hoverRing: "hover:ring-blue-300",
     hoverGlow: "hover:shadow-[0_8px_24px_rgba(59,130,246,0.5)]",
@@ -80,14 +81,18 @@ export default function Footer() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col items-center gap-2 text-center"
           >
-            <span className="text-2xl font-extrabold tracking-tighter">
-              Ammar<span className="text-violet-400">.</span>
-            </span>
+            {/* ✅ Logo placeholder — replace src with your actual logo path */}
+            <Image
+              src="/logo-light.png"
+              alt="Logo"
+              width={48}
+              height={48}
+              className="object-contain invert dark:invert-0"
+            />
             <p className="text-sm text-zinc-400 max-w-xs leading-relaxed">
               MERN Stack Developer — crafting seamless digital experiences.
             </p>
           </motion.div>
-
           {/* Nav links */}
           <motion.nav
             initial={{ opacity: 0, y: 16 }}
