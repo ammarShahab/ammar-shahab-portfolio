@@ -1,6 +1,7 @@
 import About from "@/components/web/About";
 import Hero from "@/components/web/Hero";
 import Navbar from "@/components/web/Navbar";
+import Qualification from "@/components/web/Qualification";
 import Skills from "@/components/web/Skills";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
           <Hero />
           <About />
           <Skills />
+          <Qualification />
         </main>
       </div>
     </>
