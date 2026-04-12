@@ -1,6 +1,8 @@
 import About from "@/components/web/About";
+import GetInTouch from "@/components/web/GetInTouch";
 import Hero from "@/components/web/Hero";
 import Navbar from "@/components/web/Navbar";
+import Projects from "@/components/web/Projects";
 import Qualification from "@/components/web/Qualification";
 import Skills from "@/components/web/Skills";
 
@@ -14,6 +16,8 @@ export default function Home() {
           <About />
           <Skills />
           <Qualification />
+          <Projects />
+          <GetInTouch />
         </main>
       </div>
     </>
