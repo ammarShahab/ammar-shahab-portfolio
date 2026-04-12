@@ -3,8 +3,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle/ThemeToggle";
+
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle/ThemeToggle";
 
 // Navigation links config — easy to extend
 const NAV_LINKS = [

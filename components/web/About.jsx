@@ -751,7 +751,7 @@ export default function About() {
               animate={isInView ? "show" : "hidden"}
               className="flex flex-wrap gap-3 pt-2"
             >
-              <Link href="#contact">
+              {/* <Link href="#contact">
                 <motion.div
                   whileHover={{
                     scale: 1.05,
@@ -773,7 +773,7 @@ export default function About() {
                     />
                   </svg>
                 </motion.div>
-              </Link>
+              </Link> */}
 
               {/* <motion.a
                 href="/resume.pdf"
