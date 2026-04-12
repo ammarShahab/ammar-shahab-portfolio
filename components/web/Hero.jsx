@@ -84,30 +84,29 @@ export default function Hero() {
     <section
       className="
         relative min-h-screen flex items-center overflow-hidden
-        bg-white dark:bg-zinc-950
-        transition-colors duration-300
+       
       "
     >
       {/* ── Background blobs ── */}
-      <div
+      {/*   <div
         aria-hidden
         className="
           pointer-events-none absolute -top-32 -right-32 w-[560px] h-[560px]
           rounded-full blur-[120px]
           bg-violet-100/60 dark:bg-violet-900/20
         "
-      />
-      <div
+      /> */}
+      {/*  <div
         aria-hidden
         className="
           pointer-events-none absolute bottom-0 -left-24 w-[400px] h-[400px]
           rounded-full blur-[100px]
           bg-purple-50/80 dark:bg-purple-950/30
         "
-      />
+      /> */}
 
       {/* ── Dot-grid texture ── */}
-      <div
+      {/* <div
         aria-hidden
         className="pointer-events-none absolute inset-0 opacity-30 dark:opacity-20"
         style={{
@@ -116,7 +115,7 @@ export default function Hero() {
           backgroundSize: "28px 28px",
           color: "rgb(148 163 184)", // slate-400 visible in both modes
         }}
-      />
+      /> */}
 
       {/* ── Main grid ── */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 pb-20 grid md:grid-cols-2 gap-16 items-center">
