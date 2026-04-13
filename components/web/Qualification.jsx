@@ -147,7 +147,7 @@ export default function Qualification() {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-violet-200 via-violet-300 to-violet-100 dark:from-violet-900 dark:via-violet-800 dark:to-violet-900/50" />
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-violet-200 via-violet-300 to-violet-100 dark:from-violet-900 dark:via-violet-800 dark:to-violet-900/50" />
 
             {/* ── EXPERIENCE ITEMS (Left Side) ── */}
             {EXPERIENCE.map((exp, index) => (
