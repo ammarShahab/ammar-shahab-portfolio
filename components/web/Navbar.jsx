@@ -173,10 +173,30 @@ export default function Navbar() {
                 </li>
               ))}
             </ul>
-            <div className="mt-3 pt-3 border-t border-zinc-100">
-              <button className="w-full bg-linear-to-br from-violet-600 to-purple-700 text-white text-sm font-bold py-3 rounded-xl shadow-md">
+            <div className="mt-3 pt-3 border-t border-zinc-100 dark:border-zinc-800">
+              <motion.a
+                href="/resume.pdf"
+                download
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                className="flex items-center justify-center gap-2 w-full sm:w-1/3 bg-linear-to-br from-violet-600 to-purple-700 hover:from-violet-700 hover:to-purple-800 text-white text-sm font-bold py-3 px-4 rounded-xl shadow-md hover:shadow-[0_6px_20px_rgba(124,58,237,0.4)] transition-all duration-300 cursor-pointer select-none"
+              >
+                {/* <svg
+                  className="w-4 h-4 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                  />
+                </svg> */}
                 Download Resume
-              </button>
+              </motion.a>
             </div>
           </motion.div>
         )}
