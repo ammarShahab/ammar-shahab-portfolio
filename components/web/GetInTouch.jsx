@@ -260,9 +260,9 @@ export default function GetInTouch() {
                 &ldquo;I&apos;m always open to discussing new projects, creative
                 ideas, or opportunities to be part of your vision.&rdquo;
               </p>
-              <p className="text-xs font-semibold text-violet-500 dark:text-violet-400 mt-3">
+              {/* <p className="text-xs font-semibold text-violet-500 dark:text-violet-400 mt-3">
                 — Your Name
-              </p>
+              </p> */}
             </motion.div>
           </motion.div>
 
