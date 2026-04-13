@@ -167,15 +167,12 @@ export default function Qualification() {
                     className="relative rounded-2xl border border-violet-100 dark:border-violet-900/40 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm p-6 shadow-[0_4px_20px_rgba(99,14,212,0.08)] dark:shadow-[0_4px_20px_rgba(99,14,212,0.15)]"
                   >
                     {/* Glowing dot */}
-                    {/* Glowing dot */}
                     <div className="absolute top-1/2 -translate-y-1/2 -right-3 md:-right-9">
-                      {/* Outer pulse ring */}
                       <span className="absolute inset-0 rounded-full bg-violet-400 dark:bg-violet-500 opacity-40 animate-ping" />
-                      {/* Inner solid dot */}
                       <span className="relative block w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-violet-600 dark:bg-violet-400 shadow-[0_0_8px_rgba(124,58,237,0.8),0_0_20px_rgba(124,58,237,0.5),0_0_40px_rgba(124,58,237,0.3)]" />
                     </div>
 
-                    <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
+                    <h3 className="text-sm sm:text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
                       {exp.company}
                     </h3>
                     <p className="text-sm font-semibold text-violet-600 dark:text-violet-400 mb-1">
@@ -191,7 +188,7 @@ export default function Qualification() {
                       </svg>
                       {exp.period}
                     </div>
-                    <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 mb-4">
+                    <p className="text-xs sm:text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 mb-4">
                       {exp.description}
                     </p>
 
@@ -236,19 +233,17 @@ export default function Qualification() {
                   >
                     {/* Glowing dot */}
                     <div className="absolute top-1/2 -translate-y-1/2 -left-3 md:-left-9">
-                      {/* Outer pulse ring */}
                       <span className="absolute inset-0 rounded-full bg-violet-400 dark:bg-violet-500 opacity-40 animate-ping" />
-                      {/* Inner solid dot */}
                       <span className="relative block w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-violet-600 dark:bg-violet-400 shadow-[0_0_8px_rgba(124,58,237,0.8),0_0_20px_rgba(124,58,237,0.5),0_0_40px_rgba(124,58,237,0.3)]" />
                     </div>
 
-                    <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
+                    <h3 className="text-sm sm:text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
                       {edu.degree}
                     </h3>
                     <p className="text-sm font-semibold text-violet-600 dark:text-violet-400 mb-1">
                       {edu.field}
                     </p>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400 mb-2">
+                    <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 mb-2">
                       {edu.institution}
                     </p>
                     <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 mb-4">
