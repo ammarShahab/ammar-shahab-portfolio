@@ -67,7 +67,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-1">
+        <ul className="hidden xl:flex items-center gap-1">
           {NAV_LINKS.map(({ label, href }) => (
             <li key={label}>
               <Link
@@ -93,13 +93,14 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
         <ThemeToggle />
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-3">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block bg-linear-to-br from-violet-600 to-purple-700
+            className="hidden xl:block bg-linear-to-br from-violet-600 to-purple-700
               text-white text-sm font-bold px-5 py-2.5 rounded-full
               shadow-[0_4px_16px_rgba(99,14,212,0.3)] hover:shadow-[0_6px_20px_rgba(99,14,212,0.4)]
               transition-shadow duration-300"
@@ -110,7 +111,7 @@ export default function Navbar() {
           {/* Hamburger — mobile only */}
           <button
             onClick={() => setIsMobileOpen((v) => !v)}
-            className="md:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 rounded-full bg-zinc-100 hover:bg-zinc-200 transition-colors"
+            className="xl:hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5 rounded-full bg-zinc-100 hover:bg-zinc-200 transition-colors"
             aria-label="Toggle menu"
           >
             <motion.span
@@ -147,7 +148,7 @@ export default function Navbar() {
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="fixed top-20 left-1/2 -translate-x-1/2 z-40 w-[88%] max-w-sm
               rounded-2xl bg-white/80 backdrop-blur-2xl border border-white/50
-              shadow-[0_16px_48px_rgba(29,26,36,0.12)] p-4 md:hidden"
+              shadow-[0_16px_48px_rgba(29,26,36,0.12)] p-4 xl:hidden"
           >
             <ul className="flex flex-col gap-1">
               {NAV_LINKS.map(({ label, href }) => (
@@ -180,10 +181,14 @@ export default function Navbar() {
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="flex items-center justify-center gap-2 w-full sm:w-1/3 bg-linear-to-br from-violet-600 to-purple-700 hover:from-violet-700 hover:to-purple-800 text-white text-sm font-bold py-3 px-4 rounded-xl shadow-md hover:shadow-[0_6px_20px_rgba(124,58,237,0.4)] transition-all duration-300 cursor-pointer select-none"
+                className="flex items-center justify-center gap-1.5 w-full min-w-0 bg-gradient-to-br from-violet-600 to-purple-700 hover:from-violet-700 hover:to-purple-800 text-white font-bold rounded-xl shadow-md hover:shadow-[0_6px_20px_rgba(124,58,237,0.4)] transition-all duration-300 cursor-pointer select-none touch-manipulation
+      text-xs py-2 px-2.5
+      sm:text-sm sm:py-3 sm:px-4
+      md:text-xs md:py-2 md:px-2.5
+      lg:text-sm lg:py-3 lg:px-4"
               >
-                {/* <svg
-                  className="w-4 h-4 shrink-0"
+                <svg
+                  className="w-3.5 h-3.5 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 shrink-0"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -194,8 +199,14 @@ export default function Navbar() {
                     strokeLinejoin="round"
                     d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                   />
-                </svg> */}
-                Download Resume
+                </svg>
+                <span
+                  className="truncate
+      hidden md:inline lg:inline"
+                >
+                  Download Resume
+                </span>
+                <span className="truncate md:hidden">Resume</span>
               </motion.a>
             </div>
           </motion.div>
