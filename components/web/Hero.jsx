@@ -88,38 +88,8 @@ export default function Hero() {
        
       "
     >
-      {/* ── Background blobs ── */}
-      {/*   <div
-        aria-hidden
-        className="
-          pointer-events-none absolute -top-32 -right-32 w-[560px] h-[560px]
-          rounded-full blur-[120px]
-          bg-violet-100/60 dark:bg-violet-900/20
-        "
-      /> */}
-      {/*  <div
-        aria-hidden
-        className="
-          pointer-events-none absolute bottom-0 -left-24 w-[400px] h-[400px]
-          rounded-full blur-[100px]
-          bg-purple-50/80 dark:bg-purple-950/30
-        "
-      /> */}
-
-      {/* ── Dot-grid texture ── */}
-      {/* <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-30 dark:opacity-20"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, currentColor 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-          color: "rgb(148 163 184)", // slate-400 visible in both modes
-        }}
-      /> */}
-
       {/* ── Main grid ── */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 pb-20 grid md:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 w-full pt-32 pb-20 grid lg:grid-cols-2 gap-16 items-center">
         {/* ════════════════════
             LEFT — Text
         ════════════════════ */}
@@ -127,10 +97,8 @@ export default function Hero() {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          className="flex flex-col gap-7 order-2 md:order-1"
+          className="flex flex-col gap-7 order-2 lg:order-1"
         >
-          {/* Status badge */}
-
           {/* Headline */}
           <motion.div variants={fadeUp} className="space-y-2">
             <h1
@@ -223,32 +191,6 @@ export default function Hero() {
             </Link>
           </motion.div>
 
-          {/* Tech stack */}
-          {/* <motion.div
-            variants={fadeUp}
-            className="pt-6 border-t flex flex-col gap-3 border-zinc-100 dark:border-zinc-800"
-          >
-            <span className="text-xs font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-              Expertise In
-            </span>
-            <div className="flex flex-wrap gap-5">
-              {TECH.map((tech, i) => (
-                <motion.span
-                  key={tech}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.9 + i * 0.08, duration: 0.5 }}
-                  whileHover={{ color: "#7c3aed", scale: 1.05 }}
-                  className="
-                    text-lg font-extrabold cursor-default transition-colors duration-200
-                    text-zinc-300 dark:text-zinc-600
-                  "
-                >
-                  {tech}
-                </motion.span>
-              ))}
-            </div>
-          </motion.div> */}
           {/* Social Links */}
           <motion.div
             variants={fadeUp}
@@ -293,7 +235,7 @@ export default function Hero() {
           variants={fadeIn}
           initial="hidden"
           animate="show"
-          className="relative order-1 md:order-2 flex justify-center items-center"
+          className="relative order-1 lg:order-2 flex justify-center items-center"
         >
           <div className="relative w-64 h-64 md:w-[420px] md:h-[420px]">
             {/* Orbiting ring 1 */}
@@ -322,7 +264,7 @@ export default function Hero() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               className="
-                relative w-full h-full rounded-full overflow-hidden z-10
+                relative w-full h-full  rounded-full overflow-hidden z-10
                 border-4 border-white dark:border-zinc-800
                 shadow-[0_24px_64px_rgba(99,14,212,0.14)]
                 dark:shadow-[0_24px_64px_rgba(99,14,212,0.30)]
@@ -467,7 +409,7 @@ export default function Hero() {
                 ease: [0.22, 1, 0.36, 1],
               }}
               className="
-                absolute top-1/2 -translate-y-1/2 -right-4 md:-right-16 z-20
+                absolute top-1/2 -translate-y-1/2 -right-12 md:-right-8 z-20
                 px-4 py-3 rounded-2xl border
                 bg-white border-zinc-100 shadow-[0_8px_24px_rgba(29,26,36,0.08)]
                 dark:bg-zinc-900 dark:border-zinc-700/60 dark:shadow-[0_8px_24px_rgba(0,0,0,0.4)]

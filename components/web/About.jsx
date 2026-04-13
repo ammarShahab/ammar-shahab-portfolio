@@ -115,7 +115,7 @@ export default function About() {
         </motion.div>
 
         {/* ── Two-column grid ── */}
-        <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           {/* ══════════════════════════
               LEFT — SVG Illustration
           ══════════════════════════ */}

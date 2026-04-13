@@ -146,7 +146,7 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -12, scale: 0.97 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="fixed top-20 left-1/2 -translate-x-1/2 z-40 w-[88%] max-w-sm
+            className="fixed top-20 left-1/2 -translate-x-1/2 z-40 w-full 
               rounded-2xl bg-white/80 backdrop-blur-2xl border border-white/50
               shadow-[0_16px_48px_rgba(29,26,36,0.12)] p-4 xl:hidden"
           >
