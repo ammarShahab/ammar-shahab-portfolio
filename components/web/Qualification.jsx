@@ -167,7 +167,13 @@ export default function Qualification() {
                     className="relative rounded-2xl border border-violet-100 dark:border-violet-900/40 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm p-6 shadow-[0_4px_20px_rgba(99,14,212,0.08)] dark:shadow-[0_4px_20px_rgba(99,14,212,0.15)]"
                   >
                     {/* Glowing dot */}
-                    <div className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-violet-600 dark:bg-violet-400 shadow-[0_0_20px_rgba(124,58,237,0.6)] -right-3 md:-right-9" />
+                    {/* Glowing dot */}
+                    <div className="absolute top-1/2 -translate-y-1/2 -right-3 md:-right-9">
+                      {/* Outer pulse ring */}
+                      <span className="absolute inset-0 rounded-full bg-violet-400 dark:bg-violet-500 opacity-40 animate-ping" />
+                      {/* Inner solid dot */}
+                      <span className="relative block w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-violet-600 dark:bg-violet-400 shadow-[0_0_8px_rgba(124,58,237,0.8),0_0_20px_rgba(124,58,237,0.5),0_0_40px_rgba(124,58,237,0.3)]" />
+                    </div>
 
                     <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
                       {exp.company}
@@ -229,7 +235,12 @@ export default function Qualification() {
                     className="relative rounded-2xl border border-violet-100 dark:border-violet-900/40 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm p-6 shadow-[0_4px_20px_rgba(99,14,212,0.08)] dark:shadow-[0_4px_20px_rgba(99,14,212,0.15)]"
                   >
                     {/* Glowing dot */}
-                    <div className="absolute top-1/2 -translate-y-1/2 w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-violet-600 dark:bg-violet-400 shadow-[0_0_20px_rgba(124,58,237,0.6)] -left-3 md:-left-9" />
+                    <div className="absolute top-1/2 -translate-y-1/2 -left-3 md:-left-9">
+                      {/* Outer pulse ring */}
+                      <span className="absolute inset-0 rounded-full bg-violet-400 dark:bg-violet-500 opacity-40 animate-ping" />
+                      {/* Inner solid dot */}
+                      <span className="relative block w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-violet-600 dark:bg-violet-400 shadow-[0_0_8px_rgba(124,58,237,0.8),0_0_20px_rgba(124,58,237,0.5),0_0_40px_rgba(124,58,237,0.3)]" />
+                    </div>
 
                     <h3 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-1">
                       {edu.degree}
