@@ -99,17 +99,17 @@ export default function Navbar() {
         <ThemeToggle />
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-3">
-          <motion.button
+          {/* <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="hidden xl:block bg-linear-to-br from-violet-600 to-purple-700
               text-white text-sm font-bold px-5 py-2.5 rounded-full
               shadow-[0_4px_16px_rgba(99,14,212,0.3)] hover:shadow-[0_6px_20px_rgba(99,14,212,0.4)]
               transition-shadow duration-300"
-          >
-            <Button
-              asChild
-              className="
+          > */}
+          <Button
+            asChild
+            className="
     hidden xl:flex items-center gap-2
     bg-gradient-to-br from-violet-600 to-purple-700
     text-white text-sm font-semibold
@@ -118,19 +118,19 @@ export default function Navbar() {
     hover:shadow-violet-500/40
     hover:scale-[1.03]
     transition-all duration-300
+    focus-visible:ring-0 focus-visible:ring-offset-0
   "
+          >
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="outline-none"
             >
-              <a
-                href="/resume.pdf"
-                className="outline-none focus:outline-none"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Download size={16} />
-                Download Resume
-              </a>
-            </Button>
-          </motion.button>
+              Download Resume
+            </a>
+          </Button>
+          {/* </motion.button> */}
 
           {/* <Button asChild>
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
