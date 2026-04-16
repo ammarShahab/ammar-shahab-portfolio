@@ -3,11 +3,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
 import Image from "next/image";
 import ThemeToggle from "./ThemeToggle/ThemeToggle";
 import { Button } from "../ui/button";
-import { Download } from "lucide-react";
 
 // Navigation links config — easy to extend
 const NAV_LINKS = [
@@ -58,7 +56,6 @@ export default function Navbar() {
           href="/"
           className="text-xl font-extrabold tracking-tighter text-zinc-900 select-none"
         >
-          {/* Ethereal<span className="text-violet-600">.</span> */}
           <Image
             src="/logo-light.png"
             alt="Logo"
@@ -99,30 +96,12 @@ export default function Navbar() {
         <ThemeToggle />
         {/* CTA + Mobile Toggle */}
         <div className="flex items-center gap-3">
-          {/* <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="hidden xl:block bg-linear-to-br from-violet-600 to-purple-700
-              text-white text-sm font-bold px-5 py-2.5 rounded-full
-              shadow-[0_4px_16px_rgba(99,14,212,0.3)] hover:shadow-[0_6px_20px_rgba(99,14,212,0.4)]
-              transition-shadow duration-300"
-          > */}
           <Button
             asChild
-            className="
-    hidden xl:flex items-center gap-2
-    bg-gradient-to-br from-violet-600 to-purple-700
-    text-white text-sm font-semibold
-    px-6 py-2.5 rounded-full
-    shadow-lg shadow-violet-500/20
-    hover:shadow-violet-500/40
-    hover:scale-[1.03]
-    transition-all duration-300
-    focus-visible:ring-0 focus-visible:ring-offset-0
-  "
+            className="hidden xl:flex items-center gap-2 bg-linear-to-br from-violet-600 to-purple-700 text-white text-sm font-semibold px-7 py-5.5 rounded-full shadow-lg shadow-violet-500/20 hover:shadow-violet-500/40 hover:scale-[1.03] transition-all duration-300 focus-visible:ring-0 focus-visible:ring-offset-0"
           >
             <a
-              href="/resume.pdf"
+              href="/api/resume"
               target="_blank"
               rel="noopener noreferrer"
               className="outline-none"
@@ -130,13 +109,6 @@ export default function Navbar() {
               Download Resume
             </a>
           </Button>
-          {/* </motion.button> */}
-
-          {/* <Button asChild>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              Download Resume
-            </a>
-          </Button> */}
 
           {/* Hamburger — mobile only */}
           <button
@@ -206,16 +178,12 @@ export default function Navbar() {
             </ul>
             <div className="mt-3 pt-3 border-t border-zinc-100 dark:border-zinc-800">
               <motion.a
-                href="/resume.pdf"
+                href="/api/resume"
                 download
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.97 }}
                 transition={{ duration: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="flex items-center justify-center gap-1.5 w-full min-w-0 bg-gradient-to-br from-violet-600 to-purple-700 hover:from-violet-700 hover:to-purple-800 text-white font-bold rounded-xl shadow-md hover:shadow-[0_6px_20px_rgba(124,58,237,0.4)] transition-all duration-300 cursor-pointer select-none touch-manipulation
-      text-xs py-2 px-2.5
-      sm:text-sm sm:py-3 sm:px-4
-      md:text-xs md:py-2 md:px-2.5
-      lg:text-sm lg:py-3 lg:px-4"
+                className="flex items-center justify-center gap-1.5 w-full min-w-0 bg-linear-to-br from-violet-600 to-purple-700 hover:from-violet-700 hover:to-purple-800 text-white font-bold rounded-xl shadow-md hover:shadow-[0_6px_20px_rgba(124,58,237,0.4)] transition-all duration-300 cursor-pointer select-none touch-manipulation text-xs py-2 px-2.5 sm:text-sm sm:py-3 sm:px-4 md:text-xs md:py-2 md:px-2.5 lg:text-sm lg:py-3 lg:px-4"
               >
                 <svg
                   className="w-3.5 h-3.5 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 shrink-0"
@@ -230,10 +198,7 @@ export default function Navbar() {
                     d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                   />
                 </svg>
-                <span
-                  className="truncate
-      hidden md:inline lg:inline"
-                >
+                <span className="truncate hidden md:inline lg:inline">
                   Download Resume
                 </span>
                 <span className="truncate md:hidden">Resume</span>

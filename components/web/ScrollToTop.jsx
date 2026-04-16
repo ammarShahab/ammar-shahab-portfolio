@@ -33,7 +33,7 @@ export default function ScrollToTop() {
           className="
             fixed bottom-8 right-8 z-50
             w-12 h-12 rounded-full
-            bg-gradient-to-br from-violet-600 to-purple-700
+            bg-linear-to-br from-violet-600 to-purple-700
             text-white flex items-center justify-center
             shadow-[0_8px_24px_rgba(99,14,212,0.4)]
             hover:shadow-[0_12px_32px_rgba(99,14,212,0.5)]

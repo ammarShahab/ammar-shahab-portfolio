@@ -165,7 +165,7 @@ export default function Hero() {
                 }}
                 whileTap={{ scale: 0.96 }}
                 className="
-                bg-gradient-to-br from-violet-600 to-purple-700 text-white
+                bg-linear-to-br from-violet-600 to-purple-700 text-white
                 px-7 py-3.5 rounded-full font-bold text-base
                 shadow-[0_6px_20px_rgba(99,14,212,0.22)] transition-shadow duration-300
               "
@@ -237,7 +237,7 @@ export default function Hero() {
           animate="show"
           className="relative order-1 lg:order-2 flex justify-center items-center"
         >
-          <div className="relative w-64 h-64 md:w-[420px] md:h-[420px]">
+          <div className="relative w-64 h-64 md:w-105 md:h-105">
             {/* Orbiting ring 1 */}
             <motion.div
               animate={{ rotate: 360 }}

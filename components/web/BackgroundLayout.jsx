@@ -8,7 +8,7 @@ export default function BackgroundLayout({ children }) {
       <div
         aria-hidden
         className="
-          pointer-events-none absolute -top-32 -right-32 w-[560px] h-[560px]
+          pointer-events-none absolute -top-32 -right-32 w-140 h-140
           rounded-full blur-[120px]
           bg-violet-100/60 dark:bg-violet-900/20
         "
@@ -16,7 +16,7 @@ export default function BackgroundLayout({ children }) {
       <div
         aria-hidden
         className="
-          pointer-events-none absolute bottom-0 -left-24 w-[400px] h-[400px]
+          pointer-events-none absolute bottom-0 -left-24 w-100 h-100
           rounded-full blur-[100px]
           bg-purple-50/80 dark:bg-purple-950/30
         "
