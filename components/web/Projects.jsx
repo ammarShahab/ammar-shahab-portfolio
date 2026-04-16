@@ -92,7 +92,7 @@ const PROJECTS = [
   },
   {
     id: 2, // or whatever ID you need
-    name: "Trust Life – Client Side",
+    name: "Trust Life – Life Insurance Management Platform",
     // tagline: "Comprehensive life insurance management platform",
     image: "/projects/trust-life-demo.png", // replace with actual image path
     stack: [
