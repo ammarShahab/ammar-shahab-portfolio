@@ -127,7 +127,7 @@ export default function About() {
           >
             <div className="relative w-full max-w-md">
               {/* Glowing backdrop behind the SVG */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-violet-100/80 to-purple-50/60 dark:from-violet-950/40 dark:to-purple-950/20 blur-2xl -z-10 scale-90" />
+              <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-violet-100/80 to-purple-50/60 dark:from-violet-950/40 dark:to-purple-950/20 blur-2xl -z-10 scale-90" />
 
               {/* Card wrapper */}
               <div className="relative rounded-3xl border border-violet-100 dark:border-violet-900/40 bg-white/60 dark:bg-zinc-900/60 backdrop-blur-sm p-8 shadow-[0_8px_40px_rgba(99,14,212,0.08)] dark:shadow-[0_8px_40px_rgba(99,14,212,0.20)]">

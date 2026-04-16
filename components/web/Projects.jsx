@@ -210,7 +210,7 @@ function ProjectModal({ project, onClose }) {
                   className="object-cover"
                 />
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                 <div className="absolute bottom-4 left-6">
                   <h2 className="text-xl font-extrabold text-white leading-tight">
                     {project.name}
@@ -278,7 +278,7 @@ function ProjectModal({ project, onClose }) {
                         key={i}
                         className="flex gap-3 text-sm text-zinc-600 dark:text-zinc-400"
                       >
-                        <span className="mt-1.5 w-1.5 h-1.5 flex-shrink-0 rounded-full bg-emerald-400 dark:bg-emerald-500" />
+                        <span className="mt-1.5 w-1.5 h-1.5 shrink-0rounded-full bg-emerald-400 dark:bg-emerald-500" />
                         {imp}
                       </li>
                     ))}
@@ -354,7 +354,7 @@ function ProjectCard({ project, index, onOpen }) {
         }`}
       >
         {/* Aspect ratio wrapper */}
-        <div className="relative aspect-[16/10] w-full bg-zinc-100 dark:bg-zinc-800">
+        <div className="relative aspect-16/10 w-full bg-zinc-100 dark:bg-zinc-800">
           <Image
             src={project.image}
             alt={project.name}
